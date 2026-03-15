@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nitro Wolf – Building the Future of the Web. Web Design & Development Agency." />
+  <title>Nitro Wolf – Building the Future of the Web</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-wolf">
+    <svg viewBox="0 0 80 80" fill="none" stroke-width="1.5">
+      <polygon points="40,6 54,22 72,16 62,34 75,52 56,46 48,66 40,54 32,66 24,46 5,52 18,34 8,16 26,22" />
+      <circle cx="40" cy="38" r="10" />
+    </svg>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- PAGE TRANSITION OVERLAY -->
+<div id="page-transition"></div>
+
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home'); return false;">Nitro Wolf</a>
+
+    <ul class="nav-links">
+      <li><a href="#" data-page="home"       onclick="showPage('home'); return false;"      class="active">Home</a></li>
+      <li><a href="#" data-page="services"   onclick="showPage('services'); return false;">Services</a></li>
+      <li><a href="#" data-page="work"       onclick="showPage('work'); return false;">Work</a></li>
+      <li><a href="#" data-page="about-page" onclick="showPage('about-page'); return false;">About</a></li>
+      <li><a href="#" data-page="blog-page"  onclick="showPage('blog-page'); return false;">Blog</a></li>
+      <li><a href="#" data-page="faq"        onclick="showPage('faq'); return false;">FAQ</a></li>
+      <li><a href="#" data-page="contact"    onclick="showPage('contact'); return false;" class="nav-cta">Contact Us</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar bar-top"></span>
+      <span class="bar bar-mid"></span>
+      <span class="bar bar-bot"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<ul class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <li><a href="#" data-page="home"       onclick="showPage('home'); return false;">Home</a></li>
+  <li><a href="#" data-page="services"   onclick="showPage('services'); return false;">Services</a></li>
+  <li><a href="#" data-page="work"       onclick="showPage('work'); return false;">Work</a></li>
+  <li><a href="#" data-page="about-page" onclick="showPage('about-page'); return false;">About</a></li>
+  <li><a href="#" data-page="blog-page"  onclick="showPage('blog-page'); return false;">Blog</a></li>
+  <li><a href="#" data-page="faq"        onclick="showPage('faq'); return false;">FAQ</a></li>
+  <li><a href="#" data-page="terms"      onclick="showPage('terms'); return false;">Terms</a></li>
+  <li><a href="#" data-page="contact"    onclick="showPage('contact'); return false;">Contact Us →</a></li>
+</ul>
+
+<!-- ═══════════════════════════════════════════
+     HOME PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-ring hero-ring-1"></div>
+    <div class="hero-ring hero-ring-2"></div>
+    <div class="hero-ring hero-ring-3"></div>
+
+      <img src="Change_the_background_colour_to_this_f0efeb_2k_delpmaspu.png" alt="">
+      <polygon points="44,6 59,23 78,17 68,36 80,54 61,48 53,68 44,56 35,68 27,48 8,54 20,36 10,17 29,23"/>
+      <circle cx="44" cy="40" r="11"/>
+      <line x1="37" y1="34" x2="33" y2="27"/>
+      <line x1="51" y1="34" x2="55" y2="27"/>
+    </svg>
+
+    <h1>Nitro Wolf</h1>
+    <p class="hero-tagline">Building the Future of the Web</p>
+    <div class="hero-cta">
+      <a href="#" class="btn-primary" onclick="showPage('services'); return false;">Explore Services</a>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services-section">
+    <section>
+      <h2 class="section-title reveal">Services Section</h2>
+      <p class="section-sub reveal reveal-delay-1">What we craft with precision and purpose</p>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <svg viewBox="0 0 24 24"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+          <h3>Web Development</h3>
+          <p>Custom websites built from the ground up with clean code, blazing speed, and pixel-perfect attention to detail that converts visitors.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <h3>E-commerce Development</h3>
+          <p>Scalable storefronts that convert visitors into customers with seamless UX and rock-solid secure payment flows.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <h3>Landing Page Design</h3>
+          <p>High-converting landing pages engineered to turn your ad traffic into qualified leads and drive measurable results.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+          <h3>Website Redesign</h3>
+          <p>Breathe new life into your outdated site. We redesign with purpose — improving both aesthetics and performance metrics.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="process-section">
+    <section>
+      <h2 class="section-title reveal">Our Process</h2>
+      <p class="section-sub reveal reveal-delay-1">Building supporting all future projects and growth</p>
+
+      <div class="process-row">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h4>Discover</h4>
+          <p>Deep-dive into your goals, audience, and competitive landscape.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <h4>Design</h4>
+          <p>Wireframes, prototypes, and visual systems aligned with your brand.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+          </div>
+          <h4>Develop</h4>
+          <p>Clean, maintainable code with cutting-edge modern technologies.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h4>Launch</h4>
+          <p>Thorough testing, deployment and post-launch monitoring support.</p>
+        </div>
+      </div>
+
+      <div class="process-row">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h4>Discover</h4>
+          <p>Strategic placements, design and interface architecture.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h4>Descoant</h4>
+          <p>Responsive design and designing said geometric matters.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+          </div>
+          <h4>Develop</h4>
+          <p>Develop and accommodate designing the polygons.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Conclust</h4>
+          <p>Develop and unlock aspcord dove every aspect.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+
+  <!-- ABOUT SNIPPET -->
+  <div style="background: var(--gray-100);">
+    <section>
+      <h2 class="section-title reveal">About Us</h2>
+      <p class="section-sub reveal reveal-delay-1">Our Nitro Wolf is a passionate team with a geometric approach</p>
+      <div class="about-grid">
+        <div class="about-wheel-wrap reveal">
+          <div class="wheel-ring">
+            <div class="wheel-node n-top"><h5>Core Values</h5><p>Free geometric approach and altruisms</p></div>
+            <div class="wheel-node n-right"><h5>Our Team</h5><p>Geometric approach and customized solutions</p></div>
+            <div class="wheel-node n-bottom"><h5>Strategy</h5><p>Geometric gastrulation and precise execution</p></div>
+            <div class="wheel-node n-left"><h5>Team Us</h5><p>Geometric approacie concessions</p></div>
+            <div class="wheel-center">
+              <svg viewBox="0 0 40 40">
+                <polygon points="20,4 27,14 38,12 32,22 38,32 27,30 20,38 13,30 2,32 8,22 2,12 13,14"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <h2>Our Team's Geometric Approach</h2>
+          <p>We believe great design is built on structure. Our team applies geometric principles to every project — from grid systems to brand identity — creating work that is both visually striking and functionally precise.</p>
+          <p>Nitro Wolf has partnered with brands across industries to bring order, beauty, and digital excellence to the web.</p>
+          <div class="about-stats">
+            <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Projects Delivered</div></div>
+            <div class="stat"><div class="stat-num">2yr</div><div class="stat-label">Industry Experience</div></div>
+            <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Happy Clients</div></div>
+            <div class="stat"><div class="stat-num">4</div><div class="stat-label">Team Members</div></div>
+          </div>
+          <a href="#" class="btn-secondary" onclick="showPage('about-page'); return false;">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+ 
+  <!-- CTA BANNER -->
+  <div class="cta-banner reveal">
+    <h2>Final Call-To-Action</h2>
+    <p>Kirins do your resan or coonocorreng conect of stelie new ying ont mecunodiasales and ore labe last agriect.</p>
+    <a href="#" class="btn-white" onclick="showPage('contact'); return false;">Start Your Project</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Nitro Wolf</h3>
+        <p>Building the Future of the Web — one pixel-perfect project at a time.</p>
+        <div class="social-links">
+          <a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home'); return false;">Home</a></li>
+          <li><a href="#" onclick="showPage('about-page'); return false;">About</a></li>
+          <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
+          <li><a href="#" onclick="showPage('contact'); return false;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('about-page'); return false;">About</a></li>
+          <li><a href="#" onclick="showPage('work'); return false;">Develop</a></li>
+          <li><a href="#" onclick="showPage('work'); return false;">Launch</a></li>
+          <li><a href="#" onclick="showPage('work'); return false;">Websites</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Team</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('about-page'); return false;">News</a></li>
+          <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
+          <li><a href="#" onclick="showPage('work'); return false;">Websites</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li>
+          <li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li>
+          <li><a href="#" onclick="showPage('faq'); return false;">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#home -->
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="services">
+  <div class="page-hero dark">
+    <h1>Our Services</h1>
+    <p>Everything your digital presence needs — under one roof.</p>
+  </div>
+
+  <div class="services-detailed">
+    <div class="service-block reveal">
+      <div class="service-block-img">[ Web Development – Add Image Here ]</div>
+      <div class="service-block-text">
+        <h2>Web Development</h2>
+        <p>We build websites that are fast, accessible, and built to last. From simple brochure sites to complex web applications, our development team delivers clean, maintainable code that performs at scale.</p>
+        <ul class="feature-list">
+          <li>Custom CMS Development</li>
+          <li>React / Next.js Applications</li>
+          <li>Performance Optimization</li>
+          <li>API Integration</li>
+          <li>Ongoing Maintenance</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get a Quote</a>
+      </div>
+    </div>
+
+    <div class="service-block reverse reveal">
+      <div class="service-block-img">[ E-commerce – Add Image Here ]</div>
+      <div class="service-block-text">
+        <h2>E-commerce Development</h2>
+        <p>Sell more with storefronts built for conversion. We design and develop Shopify, WooCommerce, and custom e-commerce experiences that delight shoppers and drive revenue.</p>
+        <ul class="feature-list">
+          <li>Shopify &amp; WooCommerce</li>
+          <li>Custom Checkout Flows</li>
+          <li>Product Page Optimization</li>
+          <li>Payment Gateway Integration</li>
+          <li>Inventory Management Systems</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get a Quote</a>
+      </div>
+    </div>
+
+    <div class="service-block reveal">
+      <div class="service-block-img">[ Landing Page – Add Image Here ]</div>
+      <div class="service-block-text">
+        <h2>Landing Page Design</h2>
+        <p>Every ad click deserves a destination that converts. We design landing pages that capture attention in seconds and guide visitors towards your desired action with clarity and confidence.</p>
+        <ul class="feature-list">
+          <li>CRO-Focused Design</li>
+          <li>A/B Testing Ready</li>
+          <li>Lead Capture Forms</li>
+          <li>Fast Load Times</li>
+          <li>Analytics Integration</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get a Quote</a>
+      </div>
+    </div>
+
+    <div class="service-block reverse reveal">
+      <div class="service-block-img">[ Redesign – Add Image Here ]</div>
+      <div class="service-block-text">
+        <h2>Website Redesign</h2>
+        <p>Is your current website holding your brand back? We audit, strategize, and redesign your web presence from the ground up — preserving SEO value while delivering a fresh, modern experience.</p>
+        <ul class="feature-list">
+          <li>UX Audit &amp; Research</li>
+          <li>Brand Alignment</li>
+          <li>SEO Migration Planning</li>
+          <li>Content Restructuring</li>
+          <li>Performance Benchmarking</li>
+        </ul>
+        <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Ready to Build Something Great?</h2>
+    <p>Let's talk about your project. We're ready when you are.</p>
+    <a href="#" class="btn-white" onclick="showPage('contact'); return false;">Start Your Project</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('about-page'); return false;">About</a></li><li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#services -->
+
+
+<!-- ═══════════════════════════════════════════
+     WORK PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="work">
+  <div class="page-hero light">
+    <h1>Our Work</h1>
+    <p>A curated selection of projects we're proud of.</p>
+  </div>
+
+  <div class="work-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="webdev">Web Dev</button>
+    <button class="filter-btn" data-filter="ecom">E-commerce</button>
+    <button class="filter-btn" data-filter="branding">Branding</button>
+    <button class="filter-btn" data-filter="landing">Landing Page</button>
+  </div>
+
+  <div class="work-grid">
+    <div class="work-item reveal" data-cat="branding">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#2d2d2d,#555);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Altep Studio</h4><span>Branding &amp; Web — 2023</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-1" data-cat="ecom">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#e8e4da,#ccc);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Aridton</h4><span>E-commerce — 2023</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-2" data-cat="landing">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#334);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Abstract Priko Aramity</h4><span>Landing Page — 2022</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-1" data-cat="webdev">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#3d3d3d,#666);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Brands Co.</h4><span>Redesign — 2022</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-2" data-cat="webdev">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#e0ddd5,#bbb);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Deniamios</h4><span>Web App — 2022</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-3" data-cat="branding">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#0d0d0d,#333);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>1002 Studio</h4><span>Portfolio — 2021</span></div>
+    </div>
+    <div class="work-item reveal" data-cat="landing">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#4a3728,#7a5a40);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Redesign Strategy</h4><span>UX Redesign — 2021</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-1" data-cat="webdev">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#283040,#445566);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Koosta Analytics</h4><span>Dashboard — 2021</span></div>
+    </div>
+    <div class="work-item reveal reveal-delay-2" data-cat="ecom">
+      <div class="work-thumb" style="background:linear-gradient(135deg,#f0ece3,#d5d0c5);">
+        <div class="work-overlay"><span>View Project</span></div>
+      </div>
+      <div class="work-info"><h4>Alteo Brands</h4><span>E-commerce — 2021</span></div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Like What You See?</h2>
+    <p>Let's collaborate on your next project and build something remarkable together.</p>
+    <a href="#" class="btn-white" onclick="showPage('contact'); return false;">Start Your Project</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('about-page'); return false;">About</a></li><li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#work -->
+
+
+<!-- ═══════════════════════════════════════════
+     ABOUT PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="about-page">
+  <div class="page-hero dark">
+    <h1>About Nitro Wolf</h1>
+    <p>A passionate team building the future of the web.</p>
+  </div>
+
+  <div style="background: var(--white);">
+    <section>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>We Build With Purpose</h2>
+          <p>Nitro Wolf was founded with a single belief: that great digital products should be both beautiful and functional. We're a design-led development agency that works with startups, scale-ups, and established brands.</p>
+          <p>Our team brings together expertise in design, engineering, and strategy to deliver websites and applications that make a real impact for our clients.</p>
+          <p>Every project we undertake goes through our rigorous geometric approach — a process of structured thinking, meticulous execution, and constant refinement.</p>
+          <div class="about-stats">
+            <div class="stat"><div class="stat-num">120+</div><div class="stat-label">Projects Delivered</div></div>
+            <div class="stat"><div class="stat-num">8yr</div><div class="stat-label">Industry Experience</div></div>
+            <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Happy Clients</div></div>
+            <div class="stat"><div class="stat-num">12</div><div class="stat-label">Team Members</div></div>
+          </div>
+          <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Work With Us</a>
+        </div>
+        <div class="reveal reveal-delay-2" style="width:100%;height:420px;background:var(--gray-200);border:1px solid var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--gray-400);font-style:italic;">
+          [ About Team Image – Add Here ]
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="team-section">
+    <section>
+      <h2 class="section-title reveal">Meet The Team</h2>
+      <p class="section-sub reveal reveal-delay-1">The talented people behind our geometric approach</p>
+      <div class="team-grid">
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Atles Gontes</h4>
+          <span>Founder &amp; Creative Director</span>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Giok Stiver</h4>
+          <span>Lead Developer</span>
+        </div>
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Marie Sällter</h4>
+          <span>UX Designer</span>
+        </div>
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-avatar">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Eom Geometric</h4>
+          <span>Brand Strategist</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Work With Our Team</h2>
+    <p>Ready to experience the Nitro Wolf difference? Let's build something extraordinary.</p>
+    <a href="#" class="btn-white" onclick="showPage('contact'); return false;">Start Your Project</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('services'); return false;">Services</a></li><li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#about-page -->
+
+
+<!-- ═══════════════════════════════════════════
+     BLOG PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="blog-page">
+  <div class="page-hero light">
+    <h1>Blog</h1>
+    <p>Insights, guides, and stories from the Nitro Wolf team.</p>
+  </div>
+
+  <section>
+    <div class="blog-full-grid">
+      <div class="blog-card reveal reveal-delay-1" onclick="showPage('blog-page')">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#2d2d2d,#555);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>Undrate your next sards of au/ademic Post</h4><div class="blog-date">March 12, 2021</div><p class="blog-excerpt">Several designs of development panel for your geometric consideration and branding needs.</p></div>
+      </div>
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#e8e4da,#ccc);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>Create the Designed Coa Scommerae and Comont fotions</h4><div class="blog-date">March 10, 2021</div><p class="blog-excerpt">Best demo to build Messen in Tapo Stape with geometric precision and purpose.</p></div>
+      </div>
+      <div class="blog-card reveal reveal-delay-3">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a1a2e,#334);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>What's the most Constat of Notes in Post Coat</h4><div class="blog-date">March 12, 2021</div><p class="blog-excerpt">Laundoting from resesen post card to a full strategy deployment.</p></div>
+      </div>
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#3d3d3d,#666);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>Several Designes of Development Pamel</h4><div class="blog-date">March 16, 2021</div><p class="blog-excerpt">Understanding the geometric base of modern interface construction.</p></div>
+      </div>
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#e0ddd5,#bbb);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>Best Demo-to-Build Messen in Tapo Stape</h4><div class="blog-date">March 15, 2021</div><p class="blog-excerpt">Our framework for translating wireframes into production-ready code efficiently.</p></div>
+      </div>
+      <div class="blog-card reveal reveal-delay-3">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#283040,#445566);color:#aaa;font-style:italic">Demo Image</div>
+        <div class="blog-body"><h4>Laundoting Frow Resesen Post Card</h4><div class="blog-date">March 15, 2021</div><p class="blog-excerpt">How post-card marketing translates into a digital content strategy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#blog-page -->
+
+
+<!-- ═══════════════════════════════════════════
+     CONTACT PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="contact">
+  <div class="page-hero light">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear about your project. Let's talk.</p>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-info reveal">
+      <h3>Get In Touch</h3>
+      <p>Have a project in mind or just want to say hello? Fill in the form or reach out directly via the details below.</p>
+
+      <div class="contact-item">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="ci-text"><h5>Address</h5><p>123 Wolf Tower, Digital District<br>New Delhi, India 110001</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div class="ci-text"><h5>Phone</h5><p>+91 98765 43210</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="ci-text"><h5>Email</h5><p>hello@nitrowolf.com</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+        <div class="ci-text"><h5>Working Hours</h5><p>Mon–Fri: 9am – 6pm IST<br>Sat: 10am – 2pm IST</p></div>
+      </div>
+    </div>
+
+    <div class="contact-form-box reveal reveal-delay-2">
+      <h3>Start Your Project</h3>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="John" required /></div>
+          <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Doe" required /></div>
+        </div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required /></div>
+        <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" placeholder="+91 00000 00000" /></div>
+        <div class="form-group">
+          <label for="service">Service Required</label>
+          <select id="service">
+            <option>Web Development</option>
+            <option>E-commerce Development</option>
+            <option>Landing Page Design</option>
+            <option>Website Redesign</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="budget">Budget Range</label>
+          <select id="budget">
+            <option>Under ₹50,000</option>
+            <option>₹50,000 – ₹1,50,000</option>
+            <option>₹1,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="message">Tell Us About Your Project</label><textarea id="message" placeholder="Describe your project, goals, and timeline…"></textarea></div>
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('about-page'); return false;">About</a></li><li><a href="#" onclick="showPage('services'); return false;">Services</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#contact -->
+
+
+<!-- ═══════════════════════════════════════════
+     FAQ PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="faq">
+  <div class="page-hero light">
+    <h1>FAQ</h1>
+    <p>Answers to the most common questions about working with Nitro Wolf.</p>
+  </div>
+
+  <div class="faq-container">
+    <div class="faq-item open reveal">
+      <div class="faq-question"><h4>How much does a website cost?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>Pricing varies based on project scope, complexity, and timeline. A basic informational website typically starts at ₹50,000. E-commerce platforms and custom web applications are priced higher. We provide a detailed quote after understanding your requirements.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <div class="faq-question"><h4>How long does a typical project take?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>A landing page typically takes 1–2 weeks. A full website takes 4–8 weeks. Complex e-commerce or web application projects can take 2–4 months. Timelines depend on how quickly feedback and content are provided by the client.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <div class="faq-question"><h4>Do you offer website maintenance after launch?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>Yes! We offer monthly maintenance packages that include updates, security patches, performance monitoring, and content updates. Packages start at ₹5,000/month. Ask us about our retainer options.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-3">
+      <div class="faq-question"><h4>What information do you need to start?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>To kickstart a project, we need a clear brief (your goals, target audience, competitors), any brand assets (logo, color palette, fonts), content or a content plan, and your timeline and budget expectations.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question"><h4>Do you work with clients outside India?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>Absolutely. We work with clients globally. All communication is handled via email, video calls, and project management tools. Payments can be made in INR or USD.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-1">
+      <div class="faq-question"><h4>Can you redesign my existing website?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>Yes, website redesign is one of our specialties. We conduct a full UX audit of your existing site, identify areas for improvement, and redesign with both aesthetics and performance in mind — while preserving your SEO equity.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-2">
+      <div class="faq-question"><h4>What technologies do you use?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>We work with a modern stack including React, Next.js, WordPress, Shopify, Webflow, and custom HTML/CSS/JS. The technology choice depends on your project's specific needs and long-term goals.</p></div>
+    </div>
+    <div class="faq-item reveal reveal-delay-3">
+      <div class="faq-question"><h4>How do revisions work?</h4><div class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></div></div>
+      <div class="faq-answer"><p>Each project includes 2–3 rounds of revisions per phase as stated in the project agreement. Revisions are best provided as consolidated feedback in one document. Additional revision rounds beyond scope are billed at ₹2,500/hour.</p></div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Still Have Questions?</h2>
+    <p>Reach out directly and we'll get back to you within 24 hours.</p>
+    <a href="#" class="btn-white" onclick="showPage('contact'); return false;">Contact Us</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#" onclick="showPage('home'); return false;">Home</a></li><li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#faq -->
+
+
+<!-- ═══════════════════════════════════════════
+     TERMS OF SERVICE
+═══════════════════════════════════════════ -->
+<div class="page" id="terms">
+  <div class="legal-hero">
+    <h1>Terms of Service</h1>
+    <p>Last updated: January 1, 2022</p>
+  </div>
+  <div class="legal-body">
+    <p>Welcome to Nitro Wolf. By accessing or using our website and services, you agree to be bound by these Terms of Service. Please read them carefully before engaging with us.</p>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing and using the services provided by Nitro Wolf ("Company", "we", "us", or "our"), you accept and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree, please do not use our services.</p>
+    <h2>2. Services</h2>
+    <p>Nitro Wolf provides web design, web development, e-commerce solutions, landing page design, and related digital services. The scope of work for each project is defined in a separate Statement of Work (SOW) or project agreement signed by both parties.</p>
+    <h2>3. Payment Terms</h2>
+    <p>Payment schedules are outlined in individual project agreements. Typically:</p>
+    <ul>
+      <li>50% upfront deposit required before project commencement</li>
+      <li>Remaining balance due upon project completion before final delivery</li>
+      <li>Late payments may incur a 2% monthly interest charge</li>
+    </ul>
+    <h2>4. Intellectual Property</h2>
+    <p>Upon full payment, the client receives full ownership of all deliverables created specifically for their project. Nitro Wolf retains the right to display completed work in our portfolio unless otherwise agreed in writing.</p>
+    <h2>5. Revision Policy</h2>
+    <p>Each project includes a defined number of revision rounds as stated in the project agreement. Additional revisions beyond the agreed scope will be billed at our standard hourly rate.</p>
+    <h2>6. Limitation of Liability</h2>
+    <p>Nitro Wolf shall not be liable for any indirect, incidental, special, consequential, or punitive damages. Our total liability shall not exceed the total fees paid for the specific project in question.</p>
+    <h2>7. Termination</h2>
+    <p>Either party may terminate a project agreement with 14 days written notice. Work completed up to the termination date will be billed accordingly. The deposit is non-refundable after work has commenced.</p>
+    <h2>8. Governing Law</h2>
+    <p>These terms shall be governed by the laws of India. Any disputes shall be subject to the jurisdiction of courts in New Delhi.</p>
+    <h2>9. Changes to Terms</h2>
+    <p>We reserve the right to modify these terms at any time. Continued use of our services after changes constitutes acceptance of the new terms.</p>
+    <h2>10. Contact</h2>
+    <p>For questions, contact us at <strong>legal@nitrowolf.com</strong> or via our <a href="#" onclick="showPage('contact'); return false;">Contact page</a>.</p>
+    <br>
+    <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Contact Us</a>
+    <br><br>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li><li><a href="#" onclick="showPage('faq'); return false;">FAQ</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#terms -->
+
+
+<!-- ═══════════════════════════════════════════
+     PRIVACY POLICY
+═══════════════════════════════════════════ -->
+<div class="page" id="privacy">
+  <div class="legal-hero">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: January 1, 2022</p>
+  </div>
+  <div class="legal-body">
+    <p>Nitro Wolf is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our website and services.</p>
+    <h2>1. Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li><strong>Contact Information:</strong> Name, email address, phone number when you fill out our contact form.</li>
+      <li><strong>Project Information:</strong> Details about your project requirements and business needs.</li>
+      <li><strong>Usage Data:</strong> Pages visited, time spent on site, browser type via analytics tools.</li>
+      <li><strong>Cookies:</strong> Small files stored on your device to improve site functionality.</li>
+    </ul>
+    <h2>2. How We Use Your Information</h2>
+    <p>We use collected information to respond to your inquiries, deliver services you have requested, improve our website and offerings, send project updates and relevant communications, and comply with legal obligations.</p>
+    <h2>3. Data Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. We may share data with trusted service providers under strict confidentiality agreements.</p>
+    <h2>4. Data Security</h2>
+    <p>We implement industry-standard security measures to protect your personal information. However, no method of internet transmission is 100% secure.</p>
+    <h2>5. Your Rights</h2>
+    <p>You have the right to access, correct, or delete your personal data at any time. Contact us at privacy@nitrowolf.com to exercise these rights.</p>
+    <h2>6. Cookies</h2>
+    <p>Our website uses cookies to enhance user experience. You may disable cookies through your browser settings, though this may affect some site functionality.</p>
+    <h2>7. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, contact us at <strong>privacy@nitrowolf.com</strong>.</p>
+    <br>
+    <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Contact Us</a>
+    <br><br>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>Nitro Wolf</h3><p>Building the Future of the Web.</p></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#" onclick="showPage('terms'); return false;">Terms</a></li><li><a href="#" onclick="showPage('privacy'); return false;">Privacy</a></li><li><a href="#" onclick="showPage('faq'); return false;">FAQ</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">Copyright © 2022. All Rights Reserved — Nitro Wolf</div>
+  </footer>
+</div><!-- /#privacy -->
+
+<script src="main.js"></script>
+</body>
+</html>
